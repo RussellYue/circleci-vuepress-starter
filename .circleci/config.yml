@@ -1,0 +1,17 @@
+version: 1
+jobs:
+  build:
+    filters:
+      branches:
+        only: master
+    environment:
+      - SOURCE_BRANCH: master
+      - TARGET_BRANCH: gh-pages
+      - GH_NAME: "xxx"
+      - GH_EMAIL: "xxx"
+    docker:
+      - image: circleci/node
+    steps:
+      - checkout
+      - run: yarn global add vuepress
+      - run: sh ./deploy.sh

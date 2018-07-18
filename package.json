@@ -1,0 +1,15 @@
+{
+  "name": "computer-science-blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/RussellYue/computer-science-blog.git",
+  "author": "Russell <yanmuyue@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "docs:build": "vuepress build docs",
+    "docs:dev":"vuepress dev docs"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
