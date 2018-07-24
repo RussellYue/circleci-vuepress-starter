@@ -14,4 +14,4 @@ jobs:
     steps:
       - checkout
       - run: yarn global add vuepress
-      - run: sh ./deploy.sh
+      - run: sh ./docs/deploy.sh
